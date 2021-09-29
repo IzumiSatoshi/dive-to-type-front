@@ -9,7 +9,12 @@ export const Header = () => {
       <ul css={linkListStyle}>
         <li css={listItemStyle}>
           <Link to="/" css={linkStyle}>
-            Home
+            Top
+          </Link>
+        </li>
+        <li css={listItemStyle}>
+          <Link to="/create" css={linkStyle}>
+            Create
           </Link>
         </li>
       </ul>
@@ -38,6 +43,7 @@ const linkListStyle = css`
 `;
 const listItemStyle = css`
   list-style: none;
+  padding: 0 20px;
 `;
 const linkStyle = css`
   display: inline-block;
